@@ -19,7 +19,7 @@ class ProductViewModel extends ChangeNotifier {
   final RefreshController _refreshController = RefreshController();
   RefreshController get refreshController => _refreshController;
 
-  //mengambil data dari api menggunakan Dio Http
+  //mengambil data dari api menggunakan Dio Https
   Future<void> fetchProduct() async {
     try {
       final response = await dio.get(Url.listProduct);
